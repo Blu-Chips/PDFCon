@@ -5,7 +5,6 @@ import camelot
 import streamlit as st
 from typing import List, Optional, Union
 
-
 def clean_dataframe(df: pd.DataFrame, expected_headers: List[str]) -> pd.DataFrame:
     """Clean the dataframe by removing duplicate headers and empty rows."""
     if df is None or df.empty:
@@ -14,7 +13,6 @@ def clean_dataframe(df: pd.DataFrame, expected_headers: List[str]) -> pd.DataFra
     # Drop rows where the first column matches the header, if duplicated
     df_cleaned = df[~(df.iloc[:, 0] == expected_headers[0])]
     return df_cleaned.dropna(how='all').reset_index(drop=True)
-
 
 def extract_page_data_with_pdfplumber(
         page: pdfplumber.page.Page,
