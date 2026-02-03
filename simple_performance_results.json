@@ -1,0 +1,10 @@
+{
+  "import_time": 3.5683,
+  "agent_init_avg_ms": 0.05,
+  "url_validation_rate": 36071.5,
+  "text_processing_rate": 13176.71,
+  "concurrent_rate": 6285.17,
+  "overall_rate": 23301.76,
+  "rating": "\ud83d\ude80 EXCELLENT",
+  "timestamp": 1770058335.8956642
+}

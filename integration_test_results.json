@@ -1,0 +1,75 @@
+{
+  "summary": {
+    "tests_passed": 2,
+    "total_tests": 3,
+    "success_rate": 66.66666666666666,
+    "duration_seconds": 7.952126,
+    "timestamp": "2026-02-02T21:36:57.564839"
+  },
+  "detailed_results": {
+    "Orchestrator Initialization": {
+      "status": "SUCCESS",
+      "details": "Agent created successfully",
+      "timestamp": "2026-02-02T21:36:51.805248"
+    },
+    "Health Check": {
+      "status": "SUCCESS",
+      "details": "5/5 agents healthy",
+      "timestamp": "2026-02-02T21:36:51.806724"
+    },
+    "Status Tracking": {
+      "status": "SUCCESS",
+      "details": "Current status: initiated",
+      "timestamp": "2026-02-02T21:36:51.808748"
+    },
+    "Mock Report Processing": {
+      "status": "SUCCESS",
+      "details": "Workflow structure validated",
+      "timestamp": "2026-02-02T21:36:51.817035"
+    },
+    "Scraping Agent": {
+      "status": "SUCCESS",
+      "details": "URL validation working",
+      "timestamp": "2026-02-02T21:36:51.828402"
+    },
+    "Processing Agent": {
+      "status": "SUCCESS",
+      "details": "Text cleaning functional",
+      "timestamp": "2026-02-02T21:36:51.833003"
+    },
+    "Analysis Agent": {
+      "status": "SUCCESS",
+      "details": "Agent healthy",
+      "timestamp": "2026-02-02T21:36:51.837243"
+    },
+    "Comparison Agent": {
+      "status": "SUCCESS",
+      "details": "Agent healthy",
+      "timestamp": "2026-02-02T21:36:51.843080"
+    },
+    "Reporting Agent": {
+      "status": "SUCCESS",
+      "details": "Agent healthy",
+      "timestamp": "2026-02-02T21:36:51.862617"
+    },
+    "API Integration": {
+      "status": "FAILED",
+      "details": "Error: Client.__init__() got an unexpected keyword argument 'app'",
+      "timestamp": "2026-02-02T21:36:57.560002"
+    }
+  },
+  "component_results": [
+    [
+      "Orchestrator Workflow",
+      true
+    ],
+    [
+      "Individual Agents",
+      true
+    ],
+    [
+      "API Integration",
+      false
+    ]
+  ]
+}

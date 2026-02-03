@@ -110,6 +110,6 @@ async def global_exception_handler(request, exc):
     )
 
 
-# Include routers (will be added as they are created)
-# from app.api.v1 import api_router
-# app.include_router(api_router, prefix=settings.API_V1_PREFIX)
+# Include routers
+from app.api.routes import documents
+app.include_router(documents.router, prefix="/api/v1")

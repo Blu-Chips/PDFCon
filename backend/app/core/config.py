@@ -48,6 +48,8 @@ class Settings(BaseSettings):
     OPENAI_API_KEY: Optional[str] = None
     OPENAI_MODEL: str = "gpt-4-turbo-preview"
     OPENAI_TEMPERATURE: float = 0.3
+    ANTHROPIC_API_KEY: Optional[str] = None
+    GEMINI_API_KEY: Optional[str] = None
     CEREBRAS_API_KEY: str = os.getenv("CEREBRAS_API_KEY", "")
     
     # Web Scraping
@@ -78,6 +80,7 @@ class Settings(BaseSettings):
         env_file=".env",
         env_file_encoding="utf-8",
         case_sensitive=True,
+        extra="ignore",  # Ignore extra environment variables
     )
 
 

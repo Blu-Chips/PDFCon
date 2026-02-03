@@ -1,0 +1,36 @@
+{
+  "summary": {
+    "tests_passed": 3,
+    "total_tests": 5,
+    "success_rate": 60.0,
+    "security_rating": "\u2705 MODERATE",
+    "timestamp": 1770058416.972953
+  },
+  "detailed_results": {
+    "Config Security": {
+      "status": "WARN",
+      "details": "Placeholder API key detected; Placeholder API key detected; Placeholder API key detected",
+      "timestamp": 1770058412.3751295
+    },
+    "Password Hashing": {
+      "status": "FAIL",
+      "details": "Error: password cannot be longer than 72 bytes, truncate manually if necessary (e.g. my_password[:72])",
+      "timestamp": 1770058412.8956406
+    },
+    "JWT Token Security": {
+      "status": "PASS",
+      "details": "Token generation/validation working (length: 152)",
+      "timestamp": 1770058416.0376832
+    },
+    "Input Validation": {
+      "status": "FAIL",
+      "details": "Error: No module named 'app'",
+      "timestamp": 1770058416.147992
+    },
+    "CORS Configuration": {
+      "status": "WARN",
+      "details": "Localhost origins present (may be intended for development)",
+      "timestamp": 1770058416.5522716
+    }
+  }
+}

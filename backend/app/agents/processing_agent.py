@@ -32,6 +32,27 @@ class ProcessingAgent:
     async def health_check(self) -> str:
         """Check health of the agent"""
         return "healthy"
+    
+    def clean_text(self, text: str) -> str:
+        """
+        Clean and normalize text content
+        
+        Args:
+            text: Raw text to clean
+            
+        Returns:
+            Cleaned text
+        """
+        if not text:
+            return ""
+        
+        # Remove extra whitespace and normalize
+        import re
+        # Replace multiple spaces with single space
+        text = re.sub(r'\s+', ' ', text)
+        # Strip leading/trailing whitespace
+        text = text.strip()
+        return text
 
 
 class ProcessingAgentPlaceholder:

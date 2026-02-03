@@ -1,0 +1,52 @@
+{
+  "summary": {
+    "total_tests": 8,
+    "passed": 7,
+    "failed": 1,
+    "success_rate": 87.5,
+    "duration_seconds": 4.142622,
+    "timestamp": "2026-02-02T21:49:56.077713"
+  },
+  "detailed_results": {
+    "Database Connectivity": {
+      "status": "PASS",
+      "details": "Connected successfully and tables created",
+      "timestamp": "2026-02-02T21:49:54.790042"
+    },
+    "Core Module Imports": {
+      "status": "PASS",
+      "details": "All modules imported successfully",
+      "timestamp": "2026-02-02T21:49:54.899977"
+    },
+    "Config Validation": {
+      "status": "PASS",
+      "details": "All required settings present",
+      "timestamp": "2026-02-02T21:49:54.903742"
+    },
+    "Orchestrator Initialization": {
+      "status": "PASS",
+      "details": "Agents initialized: 5/5",
+      "timestamp": "2026-02-02T21:49:54.904644"
+    },
+    "API Endpoints Availability": {
+      "status": "WARN",
+      "details": "Only found routes: ['/health']",
+      "timestamp": "2026-02-02T21:49:56.064969"
+    },
+    "Scraping Agent Basic": {
+      "status": "PASS",
+      "details": "URL validation working (100% valid, 100% invalid)",
+      "timestamp": "2026-02-02T21:49:56.073388"
+    },
+    "Processing Agent Basic": {
+      "status": "PASS",
+      "details": "Text cleaning functional",
+      "timestamp": "2026-02-02T21:49:56.075728"
+    },
+    "Analysis Agent Basic": {
+      "status": "PASS",
+      "details": "Sentiment analysis processed 3 reviews",
+      "timestamp": "2026-02-02T21:49:56.077119"
+    }
+  }
+}
